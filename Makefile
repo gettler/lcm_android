@@ -17,7 +17,8 @@ debug: libcmyth
 libcmyth:
 	cd cmyth && BUILD_ANDROID=y scons
 	mkdir -p libs/armeabi
-	cp cmyth/*/*.so libs/armeabi
+	cp cmyth/libcppmyth/libs/armeabi/*.so libs/armeabi
+	cp cmyth/swig/libs/armeabi/*.so libs/armeabi
 	cp cmyth/swig/cmyth.jar libs
 
 clean:
